@@ -18,17 +18,17 @@ Hexo是一款基于Node.js的快速、简洁且高效的博客框架，其能帮
 
 3. 在其他设备上，clone这个仓库，并切换到Hexo分支。
 
-4. 在新设备上运行命令 `npm install` 和 `npm install hexo-deployer-git` 安装必要的模块。
+4. 在新设备上运行命令 `npm install` 安装必要的模块。
 
 这样，你就可以在新设备上编写博客并push到Github，实现了博客文章的多设备同步。
 
 ### 详细步骤：
 
-#### Step1 - 创建Github分支
+#### 1. 创建Github分支
 
 在你的Github博客仓库主页，点击Branch: master标签，输入新分支名（如Hexo），然后点击Create branch: Hexo按钮。
 
-#### Step2 - 上传Hexo源文件
+#### 2. 上传Hexo源文件
 
 首先确保.gitignore文件中包含如下内容，避免将不必要的文件上传到Github。
 
@@ -54,7 +54,7 @@ $ git remote add origin https://github.com/username/username.github.io.git
 $ git push origin hexo
 ```
 
-#### Step3 - 新设备上克隆仓库
+#### 3. 新设备上克隆仓库
 
 在新设备上，首先你需要克隆Github的博客仓库，并切换到Hexo分支。
 
@@ -64,7 +64,7 @@ $ cd username.github.io
 $ git checkout hexo
 ```
 
-#### Step4 - 安装必要模块
+#### 4. 安装必要模块
 
 在新设备上执行以下的命令，用以安装必要的模块。
 

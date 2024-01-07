@@ -104,3 +104,9 @@ deploy:
   type: git
   repository: git@github.com:mounui/jam.git # 仓库地址
   branch: gh-pages    #分支名称
+
+algolia:
+  applicationID: '1LDQVPP4NL'
+  apiKey: '7b7f374abcee8a988f9629ec2726ea7b'
+  indexName: 'jam'
+  adminApiKey: '37ba00dc31e4e81eb26f28c7694285bf'

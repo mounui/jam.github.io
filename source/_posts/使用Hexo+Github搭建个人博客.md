@@ -6,6 +6,8 @@ tags: [hexo,博客,github]
 
 个人网站可以方便地展示你的思想、成果，甚至更好地进行个人品牌设计。[Hexo](https://hexo.io/)和[GitHub](https://github.com/)是搭建个人网站非常优秀的技术组合。现在让我们开始详细的搭建教程：
 
+<img src="https://res.mounui.com/2024/d4c1239e75c02e8482c22017a6c8d407cd63b1.png" alt="5bb7J7NT"  />
+
 ## 准备工作
 
 首先，在你的电脑上需要安装以下环境：
@@ -14,6 +16,8 @@ tags: [hexo,博客,github]
 - [Git](https://git-scm.com/download/win)：版本管理工具，也是我们部署到Github的必备工具。
 
 你可以通过访问官方网站下载安装包，也可以通过命令行工具来进行安装。按照官方教程步骤安装好后，可以在命令行使用`node -v`和`git --version`命令检查是否安装成功。
+
+![Snipaste_2024-01-06_20-26-40](https://res.mounui.com/2024/2bbb03f9c0cd04c63d896191c276452eef626d.png)
 
 ## 安装Hexo
 
@@ -54,7 +58,7 @@ $ hexo generate
 
 ## 创建Github Pages仓库
 
-在Github上创建新的仓库，注意仓库名的格式应为`yourusername.github.io`。然后在仓库的Settings页面，找到GitHub Pages选项，更改Source为master branch。
+在Github上创建新的仓库，注意仓库名的格式应为`yourusername.github.io`。然后在仓库的Settings页面，找到GitHub Pages选项，更改Source为main branch。
 
 ## 配置Hexo部署选项
 
