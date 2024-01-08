@@ -41,11 +41,11 @@
 <meta property="og:title" content="Hexo在Github托管的博客绑定个人域名">
 <meta property="og:url" content="https://jam.mounui.com/2024/01/05/Hexo%E5%9C%A8Github%E6%89%98%E7%AE%A1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/index.html">
 <meta property="og:site_name" content="一点果酱">
-<meta property="og:description" content="拥有独特的域名可以帮助你建立和提升你的在线身份和个人品牌。它作为你网络存在的一部分，使你的网站看上去更加专业。 第一步：购买与配置个人域名这个部分需要基于你选择的域名供应商有所不同。完成购买你喜欢的域名之后，你需要为你的GitHub Pages设置一个自定义域名。大部分供应商提供DNS设置，在该设置页，你需要添加几条记录作为下一步的准备。 旁注：通常，域名服务供应商在其文档或帮助中心提供具体的DN">
+<meta property="og:description" content="拥有独特的域名可以帮助你建立和提升你的在线身份和个人品牌。它作为你网络存在的一部分，使你的网站看上去更加专业。   一、购买与配置个人域名这个部分需要基于你选择的域名供应商有所不同。完成购买你喜欢的域名之后，你需要为你的GitHub Pages设置一个自定义域名。大部分供应商提供DNS设置，在该设置页，你需要添加几条记录作为下一步的准备。 旁注：通常，域名服务供应商在其文档或帮助中心提供具体的DN">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-01-05T09:08:25.000Z">
-<meta property="article:modified_time" content="2024-01-05T09:14:36.437Z">
+<meta property="article:modified_time" content="2024-01-08T02:22:24.455Z">
 <meta property="article:author" content="小果酱">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="博客">
@@ -833,6 +833,158 @@ button {
   .cover-wrapper.dock .menu {
     background: rgba(255,255,255,0.5);
     backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
+    --color-inlinecode: #d56d28;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
+    --color-list-hl: #63e0c4;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
+    --color-copyright-bkg: #21252b;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(31,31,31,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(38,38,38,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
+  --color-inlinecode: #d56d28;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
+  --color-list-hl: #63e0c4;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
+  --color-copyright-bkg: #21252b;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(31,31,31,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(38,38,38,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
   }
 }
 @font-face {
@@ -1671,10 +1823,21 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
   <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <script>
+      let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1748,7 +1911,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1704448248790),
+    lastupdate: new Date(1704685657935),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2224,6 +2387,57 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
           
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
 				</ul>
 			</div>
       
@@ -2254,6 +2468,57 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-home"
                   >
                   <i class='fa-solid fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2382,8 +2647,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <img itemprop="image" src="https://res.mounui.com/2024/8fd9c8f7eedde52cac007e768bc6960de18511.jpg" class="lazyload" data-srcset="https://res.mounui.com/2024/8fd9c8f7eedde52cac007e768bc6960de18511.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">小果酱</p>
   </a>
 </div>
 
@@ -2406,7 +2671,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
-
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：510 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1 分钟</p>
+    </a>
+  </div>
 
 
           
@@ -2422,12 +2698,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>拥有独特的域名可以帮助你建立和提升你的在线身份和个人品牌。它作为你网络存在的一部分，使你的网站看上去更加专业。</p>
-<h2 id="第一步：购买与配置个人域名"><a href="#第一步：购买与配置个人域名" class="headerlink" title="第一步：购买与配置个人域名"></a>第一步：购买与配置个人域名</h2><p>这个部分需要基于你选择的域名供应商有所不同。完成购买你喜欢的域名之后，你需要为你的GitHub Pages设置一个自定义域名。大部分供应商提供DNS设置，在该设置页，你需要添加几条记录作为下一步的准备。</p>
+<img src="https://res.mounui.com/2024/4cd7ceaa7a523971d8889c07f00eba51efef2a.jpg" class="lazyload" data-srcset="https://res.mounui.com/2024/4cd7ceaa7a523971d8889c07f00eba51efef2a.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="1ff04428433a4f848a00b1b6a10bf313.png~tplv-6bxrjdptv7-image" style="zoom: 67%;" />
+
+<h2 id="一、购买与配置个人域名"><a href="#一、购买与配置个人域名" class="headerlink" title="一、购买与配置个人域名"></a>一、购买与配置个人域名</h2><p>这个部分需要基于你选择的域名供应商有所不同。完成购买你喜欢的域名之后，你需要为你的GitHub Pages设置一个自定义域名。大部分供应商提供DNS设置，在该设置页，你需要添加几条记录作为下一步的准备。</p>
 <p>旁注：通常，域名服务供应商在其文档或帮助中心提供具体的DNS管理指南。</p>
-<h2 id="第二步：添加CNAME文件"><a href="#第二步：添加CNAME文件" class="headerlink" title="第二步：添加CNAME文件"></a>第二步：添加CNAME文件</h2><p>在你的Hexo站点源码的<code>source</code>目录下新建一个名为<code>CNAME</code>的文件，并在该文件中填写你购买的域名。格式如下：</p>
+<h2 id="二、添加CNAME文件"><a href="#二、添加CNAME文件" class="headerlink" title="二、添加CNAME文件"></a>二、添加CNAME文件</h2><p>在你的Hexo站点源码的<code>source</code>目录下新建一个名为<code>CNAME</code>的文件，并在该文件中填写你购买的域名。格式如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">your-domain.com</span><br></pre></td></tr></table></figure>
 <p>保存并关闭文件。</p>
-<h2 id="第三步：更改DNS设置"><a href="#第三步：更改DNS设置" class="headerlink" title="第三步：更改DNS设置"></a>第三步：更改DNS设置</h2><p>接下来你需要根据你的选择进行域名解析的配置，通常你需要更改DNS设置来指向你的GitHub Page。</p>
+<h2 id="三、更改DNS设置"><a href="#三、更改DNS设置" class="headerlink" title="三、更改DNS设置"></a>三、更改DNS设置</h2><p>接下来你需要根据你的选择进行域名解析的配置，通常你需要更改DNS设置来指向你的GitHub Page。</p>
 <p>一般来说，你需要进行以下操作：</p>
 <ul>
 <li><p>必须为每个GitHub Pages的IP地址添加<code>A</code>记录。目前GitHub Pages的IP地址如下：</p>
@@ -2441,9 +2719,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>若你希望通过<code>www.your-domain.com</code>访问你的网站，你还需要添加一个<code>CNAME</code>记录，该名称为”www”，并将”目标”，”地址”或”值”指定为<code>your-username.github.io</code>。</p>
 </li>
 </ul>
-<h2 id="第四步：填写自定义域名"><a href="#第四步：填写自定义域名" class="headerlink" title="第四步：填写自定义域名"></a>第四步：填写自定义域名</h2><p>在你的GitHub仓库设置页面找到”GitHub Pages”区域，在”Custom domain”中填写你购买的域名，例如 <code>your-domain.com</code>。</p>
+<h2 id="四、填写自定义域名"><a href="#四、填写自定义域名" class="headerlink" title="四、填写自定义域名"></a>四、填写自定义域名</h2><p>在你的GitHub仓库设置页面找到”GitHub Pages”区域，在”Custom domain”中填写你购买的域名，例如 <code>your-domain.com</code>。</p>
 <p>点击”Save”按钮保存设置。</p>
-<h2 id="第五步：填写自定义域名"><a href="#第五步：填写自定义域名" class="headerlink" title="第五步：填写自定义域名"></a>第五步：填写自定义域名</h2><p>在GitHub页面中，选中”Enforce HTTPS”选项，这会保护你的博客连接的安全。</p>
+<h2 id="五、强制https"><a href="#五、强制https" class="headerlink" title="五、强制https"></a>五、强制https</h2><p>在GitHub页面中，选中”Enforce HTTPS”选项，这会保护你的博客连接的安全。</p>
 <p>经过上述设置后，你就完成了个人域名的绑定，通常需要几个小时到24小时以完成DNS传播。传播完成后，你的博客就可以通过你的自定义域名进行访问了。</p>
 
   </div>
@@ -2469,10 +2747,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-01-05T17:14:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-01-08T10:22:24+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年1月5日</p>
+    <p>更新于：2024年1月8日</p>
   </a>
 </div>
 
@@ -2499,7 +2777,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -2511,7 +2789,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -2523,11 +2801,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
     
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,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">
+          </div>
+        </div>
       
     
       
@@ -2562,7 +2848,9 @@ GitHub Pages提供了两...</p>
         <a class='next' href='/2024/01/05/%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/'>
           <p class='title'>使用Hexo+Github搭建个人博客<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>个人网站可以方便地展示你的思想、成果，甚至更好地进行个人品牌设计。Hexo和GitHub是搭建个人网站非常优秀的技术组合。现在让我们开始详细的搭建教程：
-准备工作首先，在你的电脑上需要安装以下环...</p>
+
+
+准备工作首先，在你的电脑上需要安装以...</p>
         </a>
       
     </div>
@@ -2620,7 +2908,7 @@ GitHub Pages提供了两...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E8%B4%AD%E4%B9%B0%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D"><span class="toc-text">第一步：购买与配置个人域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E6%B7%BB%E5%8A%A0CNAME%E6%96%87%E4%BB%B6"><span class="toc-text">第二步：添加CNAME文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E6%9B%B4%E6%94%B9DNS%E8%AE%BE%E7%BD%AE"><span class="toc-text">第三步：更改DNS设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E5%A1%AB%E5%86%99%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="toc-text">第四步：填写自定义域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%EF%BC%9A%E5%A1%AB%E5%86%99%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="toc-text">第五步：填写自定义域名</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%B4%AD%E4%B9%B0%E4%B8%8E%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D"><span class="toc-text">一、购买与配置个人域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B7%BB%E5%8A%A0CNAME%E6%96%87%E4%BB%B6"><span class="toc-text">二、添加CNAME文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%9B%B4%E6%94%B9DNS%E8%AE%BE%E7%BD%AE"><span class="toc-text">三、更改DNS设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%A1%AB%E5%86%99%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="toc-text">四、填写自定义域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%BC%BA%E5%88%B6https"><span class="toc-text">五、强制https</span></a></li></ol>
     </div>
   </section>
 
@@ -2717,7 +3005,21 @@ GitHub Pages提供了两...</p>
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
           
+            
+              <a href="mailto:2401052316@qq.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
             
@@ -2731,13 +3033,6 @@ GitHub Pages提供了两...</p>
       
     
       
-        
-          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
-</div>
-        
-      
-    
-      
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
         作为主题
@@ -2745,7 +3040,7 @@ GitHub Pages提供了两...</p>
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © 2017-2023 #版权</a></p>
 
         </div>
       
@@ -2794,6 +3089,122 @@ GitHub Pages提供了两...</p>
 
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
+</script>
+
 
 
 
@@ -3190,7 +3601,7 @@ GitHub Pages提供了两...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","sameAs":["https://github.com/volantis-x"],"description":"学习资料，实用软件，生活技巧分享"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://jam.mounui.com/","name":"一点果酱"}},{"@type":"ListItem","position":3,"item":{"@id":"https://jam.mounui.com/2024/01/05/Hexo在Github托管的博客绑定个人域名/","name":"Hexo在Github托管的博客绑定个人域名"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"一点果酱","url":"https://jam.mounui.com/","keywords":"软件，学习，资料","description":"学习资料，实用软件，生活技巧分享","author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","description":"学习资料，实用软件，生活技巧分享"},"publisher":{"@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://jam.mounui.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hexo在Github托管的博客绑定个人域名","description":"学习资料，实用软件，生活技巧分享","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://jam.mounui.com/2024/01/05/Hexo%E5%9C%A8Github%E6%89%98%E7%AE%A1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/"},"author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/"},"publisher":{"@type":"Organization","name":"一点果酱","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://jam.mounui.com/2024/01/05/Hexo%E5%9C%A8Github%E6%89%98%E7%AE%A1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/","wordCount":0,"datePublished":"2024-01-05T09:08:25.000Z","dateModified":"2024-01-05T09:14:36.437Z","keywords":"hexo,博客,github,域名","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","sameAs":["https://github.com/volantis-x"],"description":"学习资料，实用软件，生活技巧分享"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://jam.mounui.com/","name":"一点果酱"}},{"@type":"ListItem","position":3,"item":{"@id":"https://jam.mounui.com/2024/01/05/Hexo在Github托管的博客绑定个人域名/","name":"Hexo在Github托管的博客绑定个人域名"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"一点果酱","url":"https://jam.mounui.com/","keywords":"软件，学习，资料","description":"学习资料，实用软件，生活技巧分享","author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","description":"学习资料，实用软件，生活技巧分享"},"publisher":{"@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://jam.mounui.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hexo在Github托管的博客绑定个人域名","description":"学习资料，实用软件，生活技巧分享","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://jam.mounui.com/2024/01/05/Hexo%E5%9C%A8Github%E6%89%98%E7%AE%A1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/"},"author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/"},"publisher":{"@type":"Organization","name":"一点果酱","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://jam.mounui.com/2024/01/05/Hexo%E5%9C%A8Github%E6%89%98%E7%AE%A1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/","wordCount":0,"datePublished":"2024-01-05T09:08:25.000Z","dateModified":"2024-01-08T02:22:24.455Z","keywords":"hexo,博客,github,域名","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

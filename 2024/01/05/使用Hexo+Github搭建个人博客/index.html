@@ -41,11 +41,11 @@
 <meta property="og:title" content="使用Hexo+Github搭建个人博客">
 <meta property="og:url" content="https://jam.mounui.com/2024/01/05/%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="一点果酱">
-<meta property="og:description" content="个人网站可以方便地展示你的思想、成果，甚至更好地进行个人品牌设计。Hexo和GitHub是搭建个人网站非常优秀的技术组合。现在让我们开始详细的搭建教程： 准备工作首先，在你的电脑上需要安装以下环境：  Node.js：Hexo是基于Node.js开发的。 Git：版本管理工具，也是我们部署到Github的必备工具。  你可以通过访问官方网站下载安装包，也可以通过命令行工具来进行安装。按照官方教程步">
+<meta property="og:description" content="个人网站可以方便地展示你的思想、成果，甚至更好地进行个人品牌设计。Hexo和GitHub是搭建个人网站非常优秀的技术组合。现在让我们开始详细的搭建教程：   准备工作首先，在你的电脑上需要安装以下环境：  Node.js：Hexo是基于Node.js开发的。 Git：版本管理工具，也是我们部署到Github的必备工具。  你可以通过访问官方网站下载安装包，也可以通过命令行工具来进行安装。按照官方教">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-01-05T08:35:17.000Z">
-<meta property="article:modified_time" content="2024-01-05T08:52:38.684Z">
+<meta property="article:modified_time" content="2024-01-08T02:22:24.456Z">
 <meta property="article:author" content="小果酱">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="博客">
@@ -832,6 +832,158 @@ button {
   .cover-wrapper.dock .menu {
     background: rgba(255,255,255,0.5);
     backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
+    --color-inlinecode: #d56d28;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
+    --color-list-hl: #63e0c4;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
+    --color-copyright-bkg: #21252b;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(31,31,31,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(38,38,38,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
+  --color-inlinecode: #d56d28;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
+  --color-list-hl: #63e0c4;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
+  --color-copyright-bkg: #21252b;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(31,31,31,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(38,38,38,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
   }
 }
 @font-face {
@@ -1670,10 +1822,21 @@ ul.list-v >li>a:hover {
     padding: 0px;
   }
 }
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
   <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <script>
+      let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1747,7 +1910,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1704448248790),
+    lastupdate: new Date(1704685657935),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2223,6 +2386,57 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
           
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
 				</ul>
 			</div>
       
@@ -2253,6 +2467,57 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-home"
                   >
                   <i class='fa-solid fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2381,8 +2646,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <img itemprop="image" src="https://res.mounui.com/2024/8fd9c8f7eedde52cac007e768bc6960de18511.jpg" class="lazyload" data-srcset="https://res.mounui.com/2024/8fd9c8f7eedde52cac007e768bc6960de18511.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">小果酱</p>
   </a>
 </div>
 
@@ -2405,7 +2670,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
-
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：657 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：2 分钟</p>
+    </a>
+  </div>
 
 
           
@@ -2421,12 +2697,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <p>个人网站可以方便地展示你的思想、成果，甚至更好地进行个人品牌设计。<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>和<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>是搭建个人网站非常优秀的技术组合。现在让我们开始详细的搭建教程：</p>
+<img src="https://res.mounui.com/2024/d4c1239e75c02e8482c22017a6c8d407cd63b1.png" class="lazyload" data-srcset="https://res.mounui.com/2024/d4c1239e75c02e8482c22017a6c8d407cd63b1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="5bb7J7NT"  />
+
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先，在你的电脑上需要安装以下环境：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>：Hexo是基于Node.js开发的。</li>
 <li><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git</a>：版本管理工具，也是我们部署到Github的必备工具。</li>
 </ul>
 <p>你可以通过访问官方网站下载安装包，也可以通过命令行工具来进行安装。按照官方教程步骤安装好后，可以在命令行使用<code>node -v</code>和<code>git --version</code>命令检查是否安装成功。</p>
+<p><img src="https://res.mounui.com/2024/2bbb03f9c0cd04c63d896191c276452eef626d.png" class="lazyload" data-srcset="https://res.mounui.com/2024/2bbb03f9c0cd04c63d896191c276452eef626d.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Snipaste_2024-01-06_20-26-40"></p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>通过npm（Node.js的包管理器）全局安装Hexo。打开终端，运行以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -2441,7 +2720,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h2 id="生成静态网页"><a href="#生成静态网页" class="headerlink" title="生成静态网页"></a>生成静态网页</h2><p>在你的博客文件夹下，通过执行下面的命令，Hexo将会在public文件夹中生成博客的静态网页，这些都是用来部署到Github的：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<h2 id="创建Github-Pages仓库"><a href="#创建Github-Pages仓库" class="headerlink" title="创建Github Pages仓库"></a>创建Github Pages仓库</h2><p>在Github上创建新的仓库，注意仓库名的格式应为<code>yourusername.github.io</code>。然后在仓库的Settings页面，找到GitHub Pages选项，更改Source为master branch。</p>
+<h2 id="创建Github-Pages仓库"><a href="#创建Github-Pages仓库" class="headerlink" title="创建Github Pages仓库"></a>创建Github Pages仓库</h2><p>在Github上创建新的仓库，注意仓库名的格式应为<code>yourusername.github.io</code>。然后在仓库的Settings页面，找到GitHub Pages选项，更改Source为main branch。</p>
 <h2 id="配置Hexo部署选项"><a href="#配置Hexo部署选项" class="headerlink" title="配置Hexo部署选项"></a>配置Hexo部署选项</h2><p>回到你的博客根目录下，找到并打开文件_config.yml，找到deploy选项，并按以下格式更改：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: git@github.com:yourname/yourname.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 
@@ -2475,10 +2754,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-01-05T16:52:38+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-01-08T10:22:24+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年1月5日</p>
+    <p>更新于：2024年1月8日</p>
   </a>
 </div>
 
@@ -2505,7 +2784,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -2517,7 +2796,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
@@ -2529,11 +2808,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+            <img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           
         </a>
       
     
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,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">
+          </div>
+        </div>
       
     
       
@@ -2561,14 +2848,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class='prev' href='/2024/01/05/Hexo%E5%9C%A8Github%E6%89%98%E7%AE%A1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hexo在Github托管的博客绑定个人域名</p>
           <p class='content'>拥有独特的域名可以帮助你建立和提升你的在线身份和个人品牌。它作为你网络存在的一部分，使你的网站看上去更加专业。
-第一步：购买与配置个人域名这个部分需要基于你选择的域名供应商有所不同。完成购买你喜...</p>
+
+
+一、购买与配置个人域名这个部分需要基于你选择的域名供应商有所不同。完成购买你喜...</p>
         </a>
       
-      
-        <a class='next' href='/2024/01/05/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
-        </a>
       
     </div>
   
@@ -2722,7 +3006,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
           
+            
+              <a href="mailto:2401052316@qq.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
             
@@ -2736,13 +3034,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        
-          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
-</div>
-        
-      
-    
-      
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
         作为主题
@@ -2750,7 +3041,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © 2017-2023 #版权</a></p>
 
         </div>
       
@@ -2799,6 +3090,122 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+volantis.pjax.push(bindToggleButton);
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
+</script>
+
 
 
 
@@ -3195,7 +3602,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","sameAs":["https://github.com/volantis-x"],"description":"学习资料，实用软件，生活技巧分享"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://jam.mounui.com/","name":"一点果酱"}},{"@type":"ListItem","position":3,"item":{"@id":"https://jam.mounui.com/2024/01/05/使用Hexo+Github搭建个人博客/","name":"使用Hexo+Github搭建个人博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"一点果酱","url":"https://jam.mounui.com/","keywords":"软件，学习，资料","description":"学习资料，实用软件，生活技巧分享","author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","description":"学习资料，实用软件，生活技巧分享"},"publisher":{"@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://jam.mounui.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"使用Hexo+Github搭建个人博客","description":"学习资料，实用软件，生活技巧分享","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://jam.mounui.com/2024/01/05/%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"},"author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/"},"publisher":{"@type":"Organization","name":"一点果酱","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://jam.mounui.com/2024/01/05/%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/","wordCount":0,"datePublished":"2024-01-05T08:35:17.000Z","dateModified":"2024-01-05T08:52:38.684Z","keywords":"hexo,博客,github","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","sameAs":["https://github.com/volantis-x"],"description":"学习资料，实用软件，生活技巧分享"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://jam.mounui.com/","name":"一点果酱"}},{"@type":"ListItem","position":3,"item":{"@id":"https://jam.mounui.com/2024/01/05/使用Hexo+Github搭建个人博客/","name":"使用Hexo+Github搭建个人博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"一点果酱","url":"https://jam.mounui.com/","keywords":"软件，学习，资料","description":"学习资料，实用软件，生活技巧分享","author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/","description":"学习资料，实用软件，生活技巧分享"},"publisher":{"@type":"Organization","name":"一点果酱","url":"https://jam.mounui.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://jam.mounui.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"使用Hexo+Github搭建个人博客","description":"学习资料，实用软件，生活技巧分享","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://jam.mounui.com/2024/01/05/%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"},"author":{"@type":"Person","name":"小果酱","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://jam.mounui.com/"},"publisher":{"@type":"Organization","name":"一点果酱","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://jam.mounui.com/2024/01/05/%E4%BD%BF%E7%94%A8Hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/","wordCount":0,"datePublished":"2024-01-05T08:35:17.000Z","dateModified":"2024-01-08T02:22:24.456Z","keywords":"hexo,博客,github","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
