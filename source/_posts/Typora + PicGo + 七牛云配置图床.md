@@ -1,6 +1,7 @@
 ---
 title: Typora + PicGo + 七牛云配置图床
 date: 2024-01-07 13:46:37
+categories: [Hexo]
 tags: [Typora,PicGo,七牛云,图床]
 ---
 
