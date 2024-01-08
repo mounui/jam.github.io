@@ -8,3 +8,93 @@ navbar:
     - name: 博客
       icon: fa-solid fa-rss
       url: /
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+
+site_footer:
+  # layout of footer: [aplayer, social, license, info, copyright]
+  layout: [aplayer, social, license, info, copyright]
+  social:
+    - icon: fas fa-rss
+      url: atom.xml
+    - icon: fas fa-envelope
+      url: mailto:2401052316@qq.com
+    - icon: fab fa-github
+      url: #你的github地址
+  copyright: '[Copyright © 2017-2023 #版权](/)'
+  # You can add your own property here. (Support markdown, for example: br: '<br>')
+  br: '<br>'
+
+# 文章布局
+article:
+  # 文章详情页面的文章卡片本体布局方案
+  body:
+    # 文章顶部信息
+    # 从 meta_library 中取
+    top_meta: [author, category, date, wordcount]
+    # meta library
+    meta_library:
+      # 默认文章作者（可在 front-matter 中覆盖）
+      author:
+        avatar: https://res.mounui.com/2024/8fd9c8f7eedde52cac007e768bc6960de18511.jpg
+        name: 小果酱
+        url: /
+      # 分享
+      share:
+        - id: qq
+          img: https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
+        - id: qzone
+          img: https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
+        - id: weibo
+          img: https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+        - id: qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
+          img: https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+        - id: # telegram
+          img: # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+
+# 评论系统
+comments:
+  title: <i class='fas fa-comments'></i> 评论
+  subtitle:
+  service: giscus
+  # giscus
+  # https://giscus.app
+  # https://github.com/laymonage/giscus
+  giscus:
+    # 以下配置按照 yml 格式增删填写即可
+    repo: mounui/giscus
+    repo-id: R_kgDOLCBf3g
+    category: Announcements
+    category-id: DIC_kwDOLCBf3s4CcRQD
+    mapping: url
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
+    # 以上配置按照 yml 格式增删填写即可
+    theme:
+      light: "light" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: "dark" # https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
+
+search:
+  enable: true
+  service: hexo
+
+plugins:
+  # 文章字数统计、阅读时长，开启需要安装插件: npm i hexo-wordcount
+  wordcount:
+    enable: true
+
+  # 暗黑模式 darkmode
+  # 开关按钮：在 navbar.menu 中添加：
+  # - name: 暗黑模式 # 可自定义
+  #   icon: fas fa-moon # 可自定义
+  #   toggle: darkmode
+  darkmode:
+    enable: true
